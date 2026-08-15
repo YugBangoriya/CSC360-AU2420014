@@ -22,6 +22,11 @@ One of the more memorable parts of the session happened outside the formal class
 
 ## Visual Observation
 
+A Java 2D window showing three shapes: a blue outlined square with no fill, a solid red circle with no border, and a green filled triangle with a black outline, each demonstrating a different use of the Graphics2D drawing API.
+<div align="center">
+<img width="768" alt="Shapes Preview" src="https://github.com/user-attachments/assets/d95c41ea-2374-4441-b3af-9f9367b506c1" />
+</div>
+
 ## Code / Implementation Done
 
 The program written in this session draws three basic shapes using Java's Graphics2D API inside a Swing JPanel. The first shape is a square drawn using drawRect, which produces only the outline with no fill, coloured blue with a stroke thickness of 3. The second shape is a circle drawn using fillOval, which produces a completely solid shape with no border, filled in red. The third shape is a triangle built by specifying three coordinate points, filled in green using fillPolygon, and then drawPolygon called on top with a black stroke to add the outline.
