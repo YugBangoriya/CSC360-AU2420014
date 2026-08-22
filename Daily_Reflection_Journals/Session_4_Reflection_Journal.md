@@ -24,15 +24,14 @@ To draw a square on a canvas, you need the coordinates of its four corners. If y
 
 The formula, verified from coordinate geometry:
 
-> Given centroid (cx, cy) and side length L, the four corners are:
->
-> Top-left: (cx - L/2, cy - L/2)
->
-> Top-right: (cx + L/2, cy - L/2)
->
-> Bottom-right: (cx + L/2, cy + L/2)
->
-> Bottom-left: (cx - L/2, cy + L/2)
+```
+Given centroid (cx, cy) and side length L, the four corners are:
+
+  Top-left:     (cx - L/2,  cy - L/2)
+  Top-right:    (cx + L/2,  cy - L/2)
+  Bottom-right: (cx + L/2,  cy + L/2)
+  Bottom-left:  (cx - L/2,  cy + L/2)
+```
 
 The logic is straightforward. Subtracting L/2 from cx moves left and adding L/2 moves right. In screen coordinates, where y increases downward, subtracting L/2 from cy moves up and adding L/2 moves down. This gives four points that are equidistant from the center in all directions, which is what makes the shape a perfect square.
 
@@ -40,19 +39,16 @@ The logic is straightforward. Subtracting L/2 from cx moves left and adding L/2 
 
 The class discussed a basic pseudocode outline for the square drawing algorithm. The idea is to take the centroid, side length, and color as inputs, compute the four corners, and then draw four lines connecting them in order.
 
-> function drawSquare(cx, cy, L, color):
->
-> Step 1: Compute the 4 corner coordinates using the centroid formula
->
-> Step 2: Draw a line from top-left to top-right
->
-> Step 3: Draw a line from top-right to bottom-right
->
-> Step 4: Draw a line from bottom-right to bottom-left
->
-> Step 5: Draw a line from bottom-left back to top-left
->
-> Step 6: Apply the specified color
+```
+function drawSquare(cx, cy, L, color):
+
+  Step 1: Compute the 4 corner coordinates using the centroid formula
+  Step 2: Draw a line from top-left to top-right
+  Step 3: Draw a line from top-right to bottom-right
+  Step 4: Draw a line from bottom-right to bottom-left
+  Step 5: Draw a line from bottom-left back to top-left
+  Step 6: Apply the specified color
+```
 
 The pseudocode stays at the logic level rather than Java-specific syntax. The key point it makes clear is that drawing a square is really just drawing four connected lines between four calculated points.
 
