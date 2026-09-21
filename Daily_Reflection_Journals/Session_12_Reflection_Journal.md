@@ -18,7 +18,7 @@ The faculty's check-ins with each group were not just progress updates: he was a
 
 ## Visual Observations
 
-(Link will be attached here directly as a GitHub Link)
+<img width="786" height="480" alt="TaskWood Preview" src="https://github.com/user-attachments/assets/10a4464b-d299-409e-a687-b390d3308101" />
 
 First visual of Taskwood (Our Project), generated with Claude and tested live in session.
 
