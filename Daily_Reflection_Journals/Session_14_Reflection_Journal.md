@@ -18,9 +18,11 @@ Once that was settled, we split the remaining work. Part of the group took on im
 
 There was no academic learning from the faculty this session. It was entirely project time, structured around the professor's group-by-group walkthrough. Our group used the session productively. Because the bulk of the work was already done, we had enough time to both finalise what was left to build and actually start on the documentation before the session ended.
 
-## Visual Observation
+## Visual Observations
 
 The UI rework I mentioned in the Session 13 reflection was now fully visible. The earlier version had a very utilitarian look, the kind of interface that gets the job done but does not feel like anyone thought about how it would look. It had the aesthetic of software from the 90s: flat, grey, and functional without any visual consideration. The redesigned version is a significant step forward. It is cleaner, better proportioned, and genuinely pleasant to look at. The rework made the project feel finished in a way the earlier version simply did not.
+
+![Redesigned Project UI - Session 14](../assets/session14-ui.png)
 
 ## Code / Implementation Done
 
@@ -30,11 +32,11 @@ For our project, the splash screen is mainly a branding moment. It shows the pro
 
 ## What I Understood Well
 
-Documentation is not an afterthought; it is part of what the project is. The source code is not readable to most people, and even for someone technical, understanding what a codebase does by reading the files alone takes significant time. A well-written README explains what the project is, why it was built, how to run it, and what it does, all in plain language. The Wiki goes one level deeper into the details. Together they are what makes the project accessible to anyone who encounters it on GitHub. Building something without documenting it is like finishing a presentation and then not showing up to deliver it. The outside world has no way in without documentation.
+The README and the Wiki serve different purposes, and understanding that distinction is what makes documentation actually usable rather than just technically present. A README is the elevator pitch for the project. Someone landing on the repository for the first time should be able to read it in a couple of minutes and come away knowing what the project is, what it does, and how to run it. The Wiki is where the depth lives: architecture decisions, feature explanations, known limitations, and contribution steps. Writing both without that boundary in mind produces a README that is too long and a Wiki that just repeats it. Getting the split right means each document does its job without the other one needing to compensate.
 
 ## What I Found Challenging
 
-There was no technical blocker this session. The implementation work was clear and the group had enough direction to split tasks without much back and forth. The one thing that required real thought was deciding what belongs in the README versus the Wiki. The README should be a quick overview that answers the basic questions fast. The Wiki is where the detailed documentation lives. Drawing that line is more of an editorial call than a technical one, and it took some discussion to agree on where each piece of content should sit.
+There was no technical blocker this session. The work was distributed and everyone had a clear task. If I am being honest, the harder thing was a mindset one: knowing when a feature is good enough to ship. With the splash screen, there was a brief discussion about whether it needed more than just the project name and a loading indicator, or whether more elaborate branding was worth the time this close to submission. That line between done enough and spending time we do not have is not always obvious, and it came up more than once today.
 
 ## Connections to Prior Sessions
 
@@ -50,9 +52,7 @@ What struck me this session was how writing the documentation forced me to think
 
 ## Self-Study & Resources Consulted
 
-- **[Gurubase.io - Create Splash Screen JavaFX](https://gurubase.io/g/java/create-splash-screen-javafx)**: Walks through implementing a JavaFX splash screen using the Preloader pattern, with code for a progress bar and fade transition before the main application window appears. Directly relevant to what we are implementing.
-
-- **[Cleverence - Create a Java Splash Screen: Step-by-Step Guide](https://www.cleverence.com/articles/oracle-documentation/create-a-java-splash-screen-guide-4837/)**: Covers multiple approaches for splash screens in Java including the built-in SplashScreen API, the Swing JWindow method, and the JavaFX Preloader pattern, with notes on when each approach fits best.
+- **[jewelsea - JavaFX Splash Screen with Fade Transition](https://gist.github.com/jewelsea/2305098)**: A widely referenced code example from a recognised JavaFX contributor showing a splash screen with a fade animation, progress bar, and background Task, closely matching the Preloader-based approach we are using.
 
 - **[freeCodeCamp - How to Write a Good README File](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)**: A practical guide on structuring a project README with the right sections, explaining the minimum requirements and what actually makes documentation useful to someone reading it for the first time.
 
