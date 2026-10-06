@@ -20,9 +20,9 @@ There was no academic learning from the faculty this session. It was entirely pr
 
 ## Visual Observations
 
-The UI rework I mentioned in the Session 13 reflection was now fully visible. The earlier version had a very utilitarian look, the kind of interface that gets the job done but does not feel like anyone thought about how it would look. It had the aesthetic of software from the 90s: flat, grey, and functional without any visual consideration. The redesigned version is a significant step forward. It is cleaner, better proportioned, and genuinely pleasant to look at. The rework made the project feel finished in a way the earlier version simply did not.
+The UI rework I mentioned in the Session 13 reflection was now fully visible. The earlier version had a very utilitarian look, the kind of interface that gets the job done but does not feel like anyone thought about how it would look. It had the aesthetic of software from the 90s: flat, white, and functional without any visual consideration. The redesigned version is a significant step forward. It is cleaner, better proportioned, and genuinely pleasant to look at. The rework made the project feel finished in a way the earlier version simply did not.
 
-![Redesigned Project UI - Session 14](../assets/session14-ui.png)
+<img width="786" height="480" alt="Grove - New UI Preview" src="https://github.com/user-attachments/assets/9a021f06-4185-4f53-9b3a-505b1d394fd0" />
 
 ## Code / Implementation Done
 
