@@ -12,7 +12,11 @@ Session 20 was different from anything that came before it in the course. The pr
 
 > Your GitHub profile is the document a recruiter or interviewer looks at before your resume, not after. Your activity graph, your pinned repositories, and the quality of what is in them are visible to anyone. A clean, well-maintained GitHub tells a story that a polished PDF cannot replicate.
 
-The professor then introduced five criteria that would be used to grade every group's repository. The first is the README, which acts as the front door of any project. A good README explains what the project is in plain language, shows it working visually through screenshots or GIFs, lists prerequisites and system requirements, and provides reproducible build and run instructions. The second is folder structure. For a Maven project, this means following the standard layout so that build tools, IDEs, and CI pipelines can all work with the project without manual configuration:
+The professor introduced five criteria that every group's repository would be graded against:
+
+1. **README** — The front door of any project. A good README explains what the project does in plain language, shows it working visually through screenshots or GIFs, lists prerequisites and system requirements, and provides reproducible build and run instructions. It is the first thing anyone reads before touching the code.
+
+2. **Folder Structure** — Maven projects must follow the standard layout so that build tools, IDEs, and CI pipelines can all work with the project without manual configuration. The `.gitignore` must exclude build output and IDE metadata. Deviating from this is not just a style preference; it actively breaks toolchains.
 
 ```
 project-root/
@@ -27,9 +31,7 @@ project-root/
         └── java/          ← unit and integration tests
 ```
 
-The `.gitignore` must exclude build output and IDE metadata. Deviating from this layout is not just a style preference; it breaks toolchains that depend on the convention.
-
-The third criterion is commit message quality. Commits should follow conventional prefixes and be written in the imperative mood so the git history reads as a meaningful audit trail, not a personal diary:
+3. **Commit Messages** — Commits should follow conventional prefixes and be written in the imperative mood so the git history reads as a meaningful audit trail, not a personal diary. The difference in quality is immediately visible when you open the log:
 
 | Poor | Good (Conventional Commit) |
 | :--- | :--- |
@@ -38,7 +40,9 @@ The third criterion is commit message quality. Commits should follow conventiona
 | more tests | test: add edge case coverage for empty tree nodes |
 | changes | refactor: extract tree traversal into separate utility class |
 
-The fourth criterion is Javadoc, which the professor described as the second level of documentation. The README explains the project to the outside world. Javadoc explains the codebase to a developer who is reading or using it. Good Javadoc documents the contract of each method: what the `@param` tags accept, what `@return` delivers, and what `@throws` can happen. It does not restate what the method name already says. The fifth and most demanding criterion is automated testing integrated into the build. Unit tests and integration tests should be wired into the Maven build lifecycle so that running `mvn test` either passes or halts the build. Tests are not an optional add-on; they are part of the evaluated artifact.
+4. **Javadoc** — The second level of documentation, sitting below the README and above inline comments. Javadoc explains the codebase to a developer reading or using it. Good Javadoc documents the contract of each method: what `@param` tags accept, what `@return` delivers, and what `@throws` can happen. It should not restate what the method name already says.
+
+5. **Automated Testing** — Unit tests and integration tests must be wired into the Maven build lifecycle so that running `mvn test` either passes or halts the build. Tests are not an optional add-on reviewed at the end; they are part of the evaluated artifact.
 
 After laying out the framework, the professor walked through the repositories for Groups 1 through 6 and assessed each one against all five criteria. The variation across groups was significant. Some had polished READMEs with clear instructions and thoughtful commit histories. Others had visible gaps: generic commit messages, missing Javadoc, or test files that existed but were not wired into the build. Watching the live review made it clear that these criteria are not abstract standards. They are directly visible to anyone who opens the repository, and they form an impression before a single line of code is read.
 
